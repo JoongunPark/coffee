@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/opertaion_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            />
+
+        <TextView
+            android:id="@+id/operation_interval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/opertaion_number"
+            android:layout_marginLeft="40dp"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/operation_maintain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/operation_interval"
+            android:layout_alignRight="@id/operation_interval"
+            android:textSize="20sp"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

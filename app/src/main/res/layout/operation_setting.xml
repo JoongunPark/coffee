@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/operation_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time interval"
+        android:textSize="40sp"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/operation_title">
+
+        <TextView
+            android:id="@+id/time_interval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time interval"
+            android:textSize="20sp"
+            android:layout_above="@+id/Maintain_time_input"
+            android:layout_marginTop="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+        <EditText
+            android:id="@+id/time_inverval_input"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:ems="4"
+            android:hint="초"
+            android:inputType="number"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Maintain time"
+            android:textSize="20sp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="52dp"
+            android:id="@+id/textView2" />
+
+        <EditText
+            android:id="@+id/Maintain_time_input"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:ems="4"
+            android:hint="초"
+            android:inputType="number"
+            android:layout_alignBottom="@id/textView2"
+            android:layout_alignLeft="@+id/time_inverval_input"
+            android:layout_alignStart="@+id/time_inverval_input" />
+
+        <Button
+            android:id="@+id/register_operation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

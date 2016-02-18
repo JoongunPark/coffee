@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/machine_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="45sp"/>
+
+    <ListView
+        android:id="@+id/opertaion_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/machine_id"
+        android:layout_above="@+id/brew_button"></ListView>
+
+    <Button
+        android:id="@+id/brew_button"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="Brew"
+        android:layout_alignTop="@+id/add_operation"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/add_operation"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="add"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/brew_button"
+        android:layout_toStartOf="@+id/brew_button" />
+</RelativeLayout>
